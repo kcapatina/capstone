@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Modak&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Forms</title>
+        <style>
+        * {
+        margin: 0;
+        padding: 0;
+       } body {
+         background: pink;            
+         } h1 {
+        font: 64pt/1.4em 'Modak';
+        color: #f07b8f;
+        text-align: center;
+        margin: 48px auto 24px auto;
+        text-decoration-line: overline;
+        text-decoration-color: orange;
+        text-decoration-style: solid;
+            }
+            form {
+                color: steelblue;
+                width: 500px;
+                min-height: 500px;
+                padding: 50px;
+                background: aliceblue;
+                margin: 35px auto;
+                border-radius: 18px;
+                font: 16pt/1.4em Andika;
+            } mark {
+        background-color: antiquewhite; 
+        color: orange; 
+            }
+            fieldset {
+                margin-top: 50px;
+            }
+            #personal input, #submit {
+                width: 100%;
+                height: 24px;
+                margin-bottom: 12px;       
+            }
+             #star {
+            display: block;
+            margin-left: 280px;
+            margin-top: 15px;
+            cursor: pointer;
+            padding-bottom: 30px;
+            } figcaption { 
+            color: aliceblue;
+            font: 16pt/2em Andika;
+            text-align: left;       
+            margin-left: 400px;
+            margin-top: -70px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="https://formsubmit.co/capatina@unlv.nevada.edu" method="post">
+            <h1>Contacting</h1>
+            <label for="fname"><mark>First Name</mark></label><br />
+            <input type="text" id="fname" value="Ex: John" /><br />
+            <label for="lname"><mark>Last Name</mark></label><br />
+            <input type="text" id="lname" value="Ex: Smith" /><br />
+
+            <fieldset>
+                <legend><mark>Reason for communication?</mark></legend>
+
+                <input type="radio" name="services" id="popup" value="Pop-Up Service" />
+                <label for="popup"> Pop-Up Service</label><br />
+                <input type="radio" name="services" id="merch" value="Bulk Merch Order" />
+                <label for="merch">Bulk Merch Order</label><br />
+                <input type="radio" name="services" id="design" value="Collaborative Design" />
+                <label for="desigb">Collaborative Design</label><br />
+            </fieldset>
+            <fieldset>
+                <legend><mark>Where are you based?</mark></legend>
+                <input type="checkbox" name="us" id="us" value="United States" />
+                <label for="us">United States</label><br />
+                <input type="checkbox" name="korea" id="korea" value="South Korea" />
+                <label for="korea">South Korea</label><br />
+                <input type="checkbox" name="other" id="other" value="Other" />
+                <label for="other">Other</label>
+            </fieldset>
+            <fieldset>
+                <legend><mark>Let's get started!</mark></legend>
+                <select>
+                    <option value="">When would you like to work with us?</option>
+                    <option value="seasonal">Seasonal</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="yearly">Yearly</option>
+                    <option value="not sure">Not sure</option>
+                </select>
+            </fieldset>
+            <input type="submit" value="Submit" />
+        </form>
+      <a href="index.html"><img id="star" src="pinkstar.png" alt="HTML tutorial" style="width:100px;height:100px;"></a>
+            <figcaption>Click on the star to return to the homepage!</figcaption>
+    </body>
+</html>
